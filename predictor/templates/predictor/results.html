@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AgroAssist</title>
+    <meta name="description" content="Your smart assistant which guards the green fields.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
+    <link rel="stylesheet" href="{% static 'css/styles.min.css' %}">
+</head>
+
+<body style="height: 100%;background: url({% static 'img/5104194.jpg' %});background-size: cover;text-align: center;">
+    <nav class="navbar navbar-light navbar-expand-md" style="background: #ffffff;">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="font-weight: bold;color: rgba(111,106,106,0.9);">AgroAssist</a></div>
+    </nav>
+    <div class="card" style="margin-top: 10%;margin-left: 15%;margin-right: 15%;border-radius: 31px;width: 60%;">
+        <div class="card-body" style="text-align: center;padding: 30px;">
+            <h4 class="card-title" style="font-size: 35px;font-family: Amaranth, sans-serif;padding: 10px;">Results</h4>
+            <div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 25px;">
+                <div class="col" style="padding-right: 0px;padding-left: 0px;"><img style="width: 100%;height: 270px;" src="{% static url %}"></div>
+                <div class="col" style="padding: 0px;">
+                    <div class="card" style="height: 100%;">
+                        <div class="card-body" style="border-top-style: solid; gravity: center; border-top-color: rgb(203,90,22);border-right-style: solid;border-right-color: rgb(202,91,22);border-bottom-style: solid;border-bottom-color: rgb(203,90,22);">
+                            <h4 class="card-title" style="opacity: 0.66;">PREDICTIONS</h4>
+                            <script>
+                                function copy()
+                                {
+                                    var copyText = document.getElementById("output");
+                                    copyText.select();
+                                    document.execCommand("copy");
+                                    return copyText.value;
+                                }
+                            </script>
+                            <p id="output" style="margin-top: 35px;font-size: 22px;text-align: left;font-family: Amaranth, sans-serif;">Status: {{name}}&nbsp;<br><br>Probability: {{score}}&nbsp;</p>
+                            <button onclick="copy()">Copy Output</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

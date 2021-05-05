@@ -1,0 +1,9 @@
+AgroAssist/__pycache__
+predictor/__pycache__
+predictor/migrations
+AgroAssist/media/*
+AgroAssist/static/img/face*
+AgroAssist/db.sqlite3
+bin
+lib
+pyvenv.cfg

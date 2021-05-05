@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AgroAssist</title>
+    <meta name="description" content="Your smart assistant which guards the green fields.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
+    <link rel="stylesheet" href="{% static 'css/styles.min.css' %}">
+</head>
+
+<body style="height: 100%;filter: brightness(103%);">
+    <nav class="navbar navbar-light navbar-expand-md" style="background: #896200;opacity: 0.93;height: 65px;">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="color: rgba(251,245,245,0.9);font-weight: bold;">AgroAssist</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'select' %}" style="color: rgba(254,249,249,0.5);">Assistant</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" style="color: rgba(254,249,249,0.5);">Team</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: rgba(254,251,251,0.5);">Sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: rgba(254,251,251,0.5);">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section style="height: 100%;background: url({% static 'img/5104194.jpg' %}) bottom right / cover no-repeat;filter: brightness(80%) contrast(118%) saturate(134%) sepia(0%);padding: 0px;text-align: center;padding-left: 0px;padding-right: 0px;width: 100%;padding-top: 0px;">
+        <h1 style="color: rgb(29,30,31);margin-bottom: 0px;margin-left: 0px;font-size: 85px;filter: brightness(200%);border-color: rgb(255,255,255);font-family: Amaranth, sans-serif;margin-top: 12%;">We care for your crops.</h1>
+        <p style="color: rgb(65,72,62);font-size: 25px;font-family: Amaranth, sans-serif;margin-bottom: 0px;margin-top: 80px;width: 50%;text-align: center;margin-left: 25%;filter: brightness(200%) contrast(0%);opacity: 1;padding: 20px;margin-right: 0px;">Our experts are waiting to help with your problems on plants. Our state of the art&nbsp; disease detector helps you to identify the disease and contact our experts with interpretable results.</p><button class="btn btn-primary" type="button" style="margin-left: 0px;margin-top: 5%;width: 15%;padding: 15px;background: rgb(236,114,0);border-style: none;border-color: transparent;border-radius: 43px;"><a href="{% url 'select' %}" style="color: rgb(246,248,249);">GET STARTED</a></button>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
