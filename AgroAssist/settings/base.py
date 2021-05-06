@@ -73,8 +73,11 @@ WSGI_APPLICATION = 'AgroAssist.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ddtre4dgkbk5ho',
+        'USER': 'itfcbgzkinyyjj',
+        'PASSWORD': 'a4ad603772326b1816502c171241a5d63d4a969b5645f38de73b52470aaffc95',
+        'HOST':'ec2-23-22-191-232.compute-1.amazonaws.com'
     }
 }
 
