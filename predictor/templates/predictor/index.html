@@ -1,40 +1,90 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en" style="height: 100%;">
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>AgroAssist</title>
-    <meta name="description" content="Your smart assistant which guards the green fields.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
-    <link rel="stylesheet" href="{% static 'css/styles.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Footer-Dark.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 
-<body style="height: 100%;filter: brightness(103%);">
-    <nav class="navbar navbar-light navbar-expand-md" style="background: #896200;opacity: 0.93;height: 65px;">
-        <div class="container-fluid"><a class="navbar-brand" href="#" style="color: rgba(251,245,245,0.9);font-weight: bold;">AgroAssist</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="{% url 'select' %}" style="color: rgba(254,249,249,0.5);">Assistant</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#" style="color: rgba(254,249,249,0.5);">Team</a></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="#" style="color: rgba(254,251,251,0.5);">Sponsors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" style="color: rgba(254,251,251,0.5);">About</a></li>
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="background: #ef920f;">
+        <div class="container"><a class="navbar-brand text-capitalize js-scroll-trigger" href="#page-top">AgroAssist</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="width: 70%;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#stack">STACK</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section style="height: 100%;background: url({% static 'img/5104194.jpg' %}) bottom right / cover no-repeat;filter: brightness(80%) contrast(118%) saturate(134%) sepia(0%);padding: 0px;text-align: center;padding-left: 0px;padding-right: 0px;width: 100%;padding-top: 0px;">
-        <h1 style="color: rgb(29,30,31);margin-bottom: 0px;margin-left: 0px;font-size: 85px;filter: brightness(200%);border-color: rgb(255,255,255);font-family: Amaranth, sans-serif;margin-top: 12%;">We care for your crops.</h1>
-        <p style="color: rgb(65,72,62);font-size: 25px;font-family: Amaranth, sans-serif;margin-bottom: 0px;margin-top: 80px;width: 50%;text-align: center;margin-left: 25%;filter: brightness(200%) contrast(0%);opacity: 1;padding: 20px;margin-right: 0px;">Our experts are waiting to help with your problems on plants. Our state of the art&nbsp; disease detector helps you to identify the disease and contact our experts with interpretable results.</p><button class="btn btn-primary" type="button" style="margin-left: 0px;margin-top: 5%;width: 15%;padding: 15px;background: rgb(236,114,0);border-style: none;border-color: transparent;border-radius: 43px;"><a href="{% url 'select' %}" style="color: rgb(246,248,249);">GET STARTED</a></button>
-        <br>
-        <button class="btn btn-primary" type="button" style="margin-left: 0px;margin-top: 2%;padding: 15px;background: green;border-style: none;border-color: transparent;border-radius: 43px;"><a href="https://mayukh-github.hubspotpagebuilder.com/-temporary-slug-7f09cd65-95c6-480e-a177-6835417d9cf3" style="color: rgb(246,248,249);">Get in contact with experts</a></button>
+    <header class="text-center text-white d-flex masthead" style="background: url({% static 'img/5104194.jpg' %}) center / cover no-repeat;">
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase"><strong class="text-capitalize" style="color: rgb(77,74,74);">We care for your crops.</strong></h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <div class="row">
+                    <div class="col">
+                        <p class="text-faded mb-5" style="color: rgba(55,53,53,0.7);">Our experts are waiting to help with your problems on plants. Our state of the art&nbsp; disease detector helps you to identify the disease and contact our experts with interpretable results.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col"><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="{% url 'select' %}" style="width: 250px;background: rgb(239,146,15);">Get Started</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="margin-top: 5%;"><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="https://mayukh-github.hubspotpagebuilder.com/-temporary-slug-7f09cd65-95c6-480e-a177-6835417d9cf3" style="background: rgb(155,125,1);">Contact our experts</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="bg-primary" id="about" style="background: rgb(248,200,1);padding: 0px;">
+        <div class="container" style="width: 100%;height: 100%;margin: 0px;max-width: 100%;padding: 0px;max-height: 100%;min-height: 100%;background: #ffffff;text-align: left;">
+            <h1 style="color: rgb(80,81,82);font-weight: bold;padding: 8px;margin-left: 5%;margin-top: 5%; font-size: 50px;">How does it work ?</h1><img src="https://raw.githubusercontent.com/Mayukhdeb/agro-temp/main/images/neural_network.jpg?token=AKE7BFW72COS62LS4PL7IFDAUPT52" style="width: 100%;">
+            <p style="width: 80%;text-align: justify;margin-left: 5%;margin-bottom: 8%;"><strong>Initial diagnosis by deep-learning</strong>&nbsp;<br>The user uploads a picture of the damaged leaves of the crop, and our deep-learning model analyses the image and determines the status of the crop<br>In order to make sure that the webapp stays light, we’ve used ONNX to deploy our PyTorch model into the heroku app.&nbsp;<br><br><strong>Seamless communication via HubSpot ChatFlow</strong><br>We wanted to ensure that the user is not left in the dark after he/she determines the status of their crop. Here’s where we used Hubspot’s ChatFlow in order to enable users to get in touch with experts right away.<br><br><strong>Contact Experts using Hubspot Contact Form:</strong><br><strong>&nbsp;&nbsp;</strong>In case the user wants to elaborate on the issues that he’s facing, he could fill out the contact form.&nbsp;</p>
+        </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <section class="text-white bg-dark" id="stack" style="padding: 20px;text-align: center;">
+        <div class="container text-center" style="padding: 5px;margin: 0px;width: 100%;max-width: 100%;text-align: left;">
+            <h1 style="padding: 10px;width: auto;text-align: left;margin-left: 3%;margin-top: 2%;font-weight: bold;">Powered by</h1>
+        </div>
+        <div class="container" style="margin-top: 2%;text-align: center;width: 80%;margin-bottom: 8%;">
+            <div class="row" style="margin-bottom: 5%;background: #ffffff;border-radius: 35px;height: 165px;width: 100%;padding: 20px;">
+                <div class="col-md-3" style="border-right-style: solid;border-right-color: rgb(33,37,41);"><img src="https://www.djangoproject.com/m/img/logos/django-logo-positive.png" style="width: 100%;padding: 15px;height: 100%;padding-top: 30px;padding-bottom: 30px;"></div>
+                <div class="col-md-3" style="border-right-style: solid;border-right-color: rgb(33,37,41);"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/ONNX_logo_main.png" style="width: 100%;height: 100%;padding: 15px;padding-top: 30px;padding-bottom: 30px;"></div>
+                <div class="col-md-3" style="border-right-style: solid;border-right-color: rgb(33,37,41);"><img src="https://www.hubspot.com/hubfs/assets/hubspot.com/style-guide/brand-guidelines/guidelines_the-logo.svg" style="width: 100%;height: 100%;"></div>
+                <div class="col-md-3"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Pytorch_logo.png" style="width: 100%;height: 100%;padding: 15px;padding-top: 35px;padding-bottom: 35px;"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">AgroAssist © 2021</p>
+        </div>
+    </footer>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="{% static 'js/creative.js' %}"></script>
 </body>
 
 </html>
