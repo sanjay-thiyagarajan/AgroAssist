@@ -1,4 +1,5 @@
 <p align="center">
+  <img src = "images/symbol.png" width = "10%">
   <img src = "images/logo.png" width = "50%">
 </p>
 
