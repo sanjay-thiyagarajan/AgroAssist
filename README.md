@@ -1,8 +1,11 @@
-# AgroAssist 
+<p align="center">
+  <img src = "images/logo.png" width = "50%">
+</p>
+
+
 
 [![Docker](https://github.com/sanjay-thiyagarajan/AgroAssist/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/sanjay-thiyagarajan/AgroAssist/actions/workflows/docker-publish.yml)  [![](https://img.shields.io/badge/heroku-deployed-green)](https://agroassist.herokuapp.com/)
 
-![](https://github.com/Mayukhdeb/agro-temp/raw/main/images/light_banner_large.png)
 
 ## What is it ? 
 Agro Assist is a deep-learning based crop infection diagnosis tool that aims to automate the preliminary stages of crop infection diagnosis and helps connect the farmers to the experts seamlessly using HubSpot CMS + CRM
