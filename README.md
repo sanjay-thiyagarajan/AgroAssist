@@ -11,6 +11,7 @@
 ## What is it ? 
 Agro Assist is a deep-learning based crop infection diagnosis tool that aims to automate the preliminary stages of crop infection diagnosis and helps connect the farmers to the experts seamlessly using HubSpot CMS + CRM
 
+![](https://github.com/sanjay-thiyagarajan/AgroAssist/blob/master/images/flowchart.jpg?raw=true)
 ## How does it work ?
 
 ### Initial diagnosis powered by deep-learning 
