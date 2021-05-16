@@ -30,6 +30,6 @@ We're a team of 3 undergrad students who love to build new products. We're plann
 
 * **Hubspot Form**: It enables the potential customers to seamlessly book an on-site visit fot further diagnosis of their crops. 
 * **ChatFlow**: ChatFlow helps us establish contact with the customer rapidly and provide immediate assistance with their crop diseases. 
-* **Hubspot Marketing Hub**: We use HubSpot marketing hub to send newsletter emails at scale to our contacts. 
+* **Hubspot Marketing Hub**: Managing contacts and scaled communication is a breeze, thanks to hubspot marketing hub. Sending out newsletters and featured updates has never been easier. 
 * **Hubspot Contacts**: The contacts feature in HubSpot has helped us to easily keep track of and manage our contacts.
 * **Hubspot Page Builder**: The page builder tool helped us build amazing webpages for our forms and the AgroAssist shop. 
